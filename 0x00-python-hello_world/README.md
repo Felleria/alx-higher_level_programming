@@ -7,7 +7,7 @@ and variables, and indexing and slicing strings in Python.
 
 Prototypes for functions written in this project:
 
-| File                       | Prototype                             |
+| File                       | Prototype                             
 | -------------------------- | ------------------------------------- |
 | `10-check_cycle.c`         | `int check_cycle(listint_t *list);`   |
 | `102-magic_calculation.py` | `def magic_calculation(a, b):`        |
@@ -15,6 +15,7 @@ Prototypes for functions written in this project:
 ## Tasks :page_with_curl:
 
 * **0. Run Python File**
+
   * [0-run](./0-run): Bash script that runs a Python script file saved
   in the environment variable `$PYFILE`.
 
@@ -66,3 +67,27 @@ Prototypes for functions written in this project:
   Tim Peters, followed by a new line.
 
 * **10. Linked list cycle**
+  * [10-check_cycle.c](./10-check_cycle.c): C function that checks if a linked list
+  contains a cycle.
+  * Returns `0` if there is no cycle and `1` if there is.
+  * Helper files:
+    * [linked_lists.c](./linked_lists.c): C functions handling linked lists for testing
+    [10-check_cycle.c](./10-check_cycle.c) (provided by Holberton School).
+    * [lists.h](./lists.h): Header file containing definitions and prototypes for
+    all types and functions used in [linked_lists.c](./linked_lists.c) and
+    [10-check_cycle.c](./10-check_cycle.c).
+
+* **11. Hello, write**
+  * [100-write.py](./100-write.py): Python script that prints exactly `and that piece of
+  art is useful - Dora Korpar, 2015-10-19`, followed by a new line to `stderr` using
+  the function `write` from the `sys` module.
+  * Exits with a status code of `1`.
+
+* **12. Compile**
+  * [101-compile](./101-compile): Python script that compiles a Python script file stored
+  in the environment variable `$PYFILE` and saves it to an output file
+  `$PYFILEc` (ex. `export PYFILE=my_main.py` => output filename: `my_main.pyc`).
+
+* **13. ByteCode -> Python #1**
+  * [102-magic_calculation.py](./102-magic_calculation.py): Python function matching exactly
+  a bytecode provided by Holberton School.
